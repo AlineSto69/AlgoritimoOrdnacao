@@ -1,4 +1,4 @@
-public class Mergesort implements  IOrdenacao{
+public class Mergesort implements IOrdenacao {
 
     private static void intercala(int[] vetor, int inicio, int meio, int fim) {
 

@@ -1,12 +1,11 @@
+
 import java.util.Arrays;
 
 public class Principal {
     public static void main (String [] args){
 
-        int [] v ={4,6,9,7,3,5,1,8,10};
+       int [] v ={4,6,9,7,3,5,1,8,10};
         IOrdenacao m = new Mergesort();
-
-
 
         System.out.println(" vetor sem usar megersort ");
         for(int x : v) {
@@ -32,6 +31,36 @@ public class Principal {
         }
 
 
+        System.out.println(" \n \n ********************************************** \n  ");
+
+/* Quisort teste*/
+
+
+        int v1[] = {24,  1, 5, 9, 13, 16, 23, 13, 7, 55, 67, 92, 22, 33, 27, 19};
+            QuickSort s = new QuickSort();
+
+        System.out.println(" vetor sem quiksort ");
+        for(int x : v1) {
+            System.out.print(x + " ");
+        }
+
+          s.ordenar(v1);
+        System.out.println(" \n vetor com quiksort crescente ");
+        for(int x : v1) {
+            System.out.print(x + ", ");
+        }
+
+
+        s.ordenarDecrescente(v1);
+        System.out.println(" \n vetor com quiksort descrecente ");
+        for(int x : v1) {
+            System.out.print(x + ", ");
+        }
+
+
+
+
+        }
 
 
 
@@ -40,4 +69,4 @@ public class Principal {
 
     }
 
-}
+
